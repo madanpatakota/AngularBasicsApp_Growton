@@ -1,0 +1,54 @@
+<!-- <p>comp-two works!</p> -->
+
+<!-- <p>Hi i am from Comp Two</p> -->
+
+
+<!-- string interpolation string binding {{_____}} -->
+<p>{{studentName}}</p>
+<h1>{{getStudentName()}}</h1>
+
+
+<!--Property data binding [_________]-->
+<hr>
+
+<!-- <input type="text" value="Siva raina - 1"> -->
+
+<input type="text" [value]="studentName_2">
+
+<input [type]="inputtype">
+
+
+<hr>
+<!--event data binding ()   -->
+
+
+<button (click)="printMessage()" >Click</button>
+
+<input type="text" (keypress)="printMessagebyTextBox()" >
+
+
+<p (mouseover)="mouseOverChangeName()"
+   (mouseleave)="mouseLeaveChangeName()">{{studentName}}</p>
+
+
+<hr>
+
+
+<!-- 1. you have to pass element as parameter($event) to the method -->
+<input type="text" (keypress)="getValueFromTheTextBox($event)">
+
+
+
+<!-- {{}}  , []   , ()    , []()    -->
+
+
+<hr>
+
+<input 
+type="text"
+[value]="studentName"
+(keyup)="getValueFromTheTextBox($event)" 
+>
+
+
+<!-- [()]  p + e   -->  
