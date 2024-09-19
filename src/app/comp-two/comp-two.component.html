@@ -51,4 +51,53 @@ type="text"
 >
 
 
-<!-- [()]  p + e   -->  
+<!-- [(ngModel)]  p + e   -->  
+
+<hr>
+<input 
+type="text"
+[(ngModel)] = "empName"
+>
+
+<p>{{empName}}</p>
+
+
+<hr>
+
+<input 
+type="text"
+[(ngModel)] = "empName"
+>
+
+<input 
+type="checkbox"
+[(ngModel)] = "modelCheckbox"
+>
+
+isChecked : {{modelCheckbox}}
+
+<hr>
+<!-- 
+<select>
+   <option value="1">India</option>
+   <option value="2">US</option>
+   <option value="3">UK</option>
+</select> -->
+
+
+<select [(ngModel)]="countryID">
+   <option value="1">India</option>
+   <option value="2">US</option>
+   <option value="3">UK</option>
+</select>
+
+
+SelectedValue : {{countryID}}
+
+
+<br>
+<br>
+<br>
+<br>
+
+<br>

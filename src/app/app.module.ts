@@ -5,17 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CompOne } from './comp-one/comp-one.component';
 import { CompTwoComponent } from './comp-two/comp-two.component';
+import { FormsModule } from '@angular/forms';
+import { CompThreeComponent } from './comp-three/comp-three.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CompOne,
-    CompTwoComponent
+    CompTwoComponent,
+    CompThreeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

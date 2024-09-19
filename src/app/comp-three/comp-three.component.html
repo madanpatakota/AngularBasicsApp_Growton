@@ -1,0 +1,93 @@
+<!-- ngStyle -->
+
+
+<!-- <p style="background-color: red;">Paragraph</p> -->
+
+<!-- <style>
+    .divClass{
+        background-color: red;
+    }
+</style> -->
+
+
+<p [ngStyle] = 
+"{ 'background-color': yellowcolor ,
+   'color': redcolor }">
+    Paragraph</p>
+
+
+<hr>
+
+
+<!-- 
+<div class="divClass">
+
+</div> -->
+
+
+<!-- ngClass -->
+
+
+<p [ngClass]="'paragraph'">Paragraph</p>
+
+
+<!-- <p class="paragraph"></p> -->
+
+
+<!-- ngIf -->
+<div>
+ Article Is : 
+  <article *ngIf="isAdmin">
+           This is Article based on the Cricket
+  </article>
+</div>
+
+<hr>
+<!-- *ngFor -->
+
+<!-- <ul>
+  <li>Keerthi</li>
+  <li>Sreedevei</li>
+  <li>Shashank</li>
+  <li>karthik</li>
+  <li>Siva</li>
+
+  
+</ul> -->
+
+<ul>
+    <li *ngFor="let student of studentNames; let i = index"> {{i + 1}} --- {{student}}</li>
+</ul>
+
+
+<hr>
+
+<p [ngClass]="'paragraph'" *ngFor="let pstudent of studentNames;">{{pstudent}}</p>
+
+
+
+<table [ngStyle]="">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tname of studentNames ; let i = index">
+            <td>{{i}}</td>
+            <td>{{tname}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

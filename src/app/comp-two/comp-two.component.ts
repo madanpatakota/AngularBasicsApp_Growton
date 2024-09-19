@@ -59,4 +59,17 @@ export class CompTwoComponent {
 
 
 
+  empName = "RChandra";
+
+  modelCheckbox = true;
+
+
+
+  countryID = 3;
+
+
+
+
+
+
 }
