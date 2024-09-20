@@ -17,6 +17,29 @@ export class CompThreeComponent {
     studentNames = ["Siva","karthik","Keerthi","Sreedevei","Shashank"];
 
 
+    //ElementRef
+
+
+    btnClick(parael : HTMLParagraphElement , textbox:HTMLInputElement){
+
+      console.log(parael);
+      console.log(parael.innerText);
+
+      console.log(textbox);
+      console.log(textbox.value);
+      
+    }
+
+
+
+
+    studentID = 4;
+
+
+    elementName = "input-password"
+
+
+
 
     
 }

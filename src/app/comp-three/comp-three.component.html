@@ -37,10 +37,43 @@
 <!-- ngIf -->
 <div>
  Article Is : 
-  <article *ngIf="isAdmin">
+  <article *ngIf="isAdmin ; else notAdmintemplate">
            This is Article based on the Cricket
   </article>
+
+  <ng-template #notAdmintemplate>
+    <p>You are not admin</p>
+  </ng-template>
 </div>
+
+
+
+<hr>
+
+<h1>ng-template</h1>
+
+<!-- elements are in off the webpage-->
+<ng-template>
+      <p>Hello Paragraph</p>
+</ng-template>
+
+
+
+<hr>
+
+<h1>Local Ref</h1>
+<!--Local ref-->
+
+
+<p #paragraph>Angular and Typescript</p>
+
+<input type="text" #itext>
+
+<button (click)="btnClick(paragraph , itext)">Print Message</button>
+
+
+
+
 
 <hr>
 <!-- *ngFor -->
@@ -82,6 +115,34 @@
 </table>
 
 
+<hr>
+<h1>ngSwith and ngSwithCase</h1>
+
+
+<div>Student is : </div>
+<div [ngSwitch]="studentID">
+    <p *ngSwitchCase="1"> Siva </p>
+    <p *ngSwitchCase="2"> Shashank </p>
+    <p *ngSwitchCase="3"> Karthik </p>
+    <p *ngSwitchCase="4"> Sashi </p>
+    <p *ngSwitchCase="5"> Sredevi </p>
+    <p *ngSwitchCase="6"> keerthi </p>
+    <p *ngSwitchDefault="">No student.....</p>
+</div>
+
+
+
+<div>YOur element is : </div>
+<div [ngSwitch]="elementName">
+    <input type="text"     *ngSwitchCase="'input-text'">
+    <input type="password" *ngSwitchCase="'input-password'">
+    <input type="radio"    *ngSwitchCase="'input-radio'">
+    <input type="checkbox" *ngSwitchCase="'input-checkbox'">
+    <p *ngSwitchDefault="">NO element....</p>
+</div>
+
+
+
 <br>
 <br>
 <br>
@@ -91,3 +152,22 @@
 <br>
 <br>
 <br>
+
+
+
+<!-- LocalRef , ng-template and how to handle else condtion , switch case -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Communicate to the Data from parent to child comp-->
